@@ -9,3 +9,64 @@
 // Calculate a trip to the moon below
 
 // Print the results of the trip to the moon below
+
+const spaceShuttle = (typeof "Determination");
+let shuttleSpeed = (typeof 17500);
+const distanceToMars = (typeof 225000000);
+const distanceToMoon = (typeof 384400);
+const milesPerKilometer = (typeof 0.621);
+
+
+
+console.log(spaceShuttle);
+console.log(shuttleSpeed);
+console.log(distanceToMars);
+console.log(distanceToMoon);
+console.log(milesPerKilometer);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
