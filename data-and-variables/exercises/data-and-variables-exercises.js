@@ -10,31 +10,32 @@
 
 // Print the results of the trip to the moon below
 
+//This one calculates the time to Mars!
 const spaceShuttle = ("Determination");
 let shuttleSpeed = (17500);
-//const distanceToMars = (225000000);
-const distanceToMoon = (384400);
+const distanceToMars = (225000000);
+//const distanceToMoon = (384400);
 const milesPerKilometer = (0.621);
 
-//let milesToMars = (distanceToMars * milesPerKilometer);
-let milesToMoon = (distanceToMoon * milesPerKilometer);
+let milesToMars = (distanceToMars * milesPerKilometer);
+//let milesToMoon = (distanceToMoon * milesPerKilometer);
 
-//let hoursToMars = (milesToMars / shuttleSpeed);
+let hoursToMars = (milesToMars / shuttleSpeed);
 
-let hoursToMoon = (milesToMoon / shuttleSpeed);
+//let hoursToMoon = (milesToMoon / shuttleSpeed);
 
-//let daysToMars = (hoursToMars / 24);
+let daysToMars = (hoursToMars / 24);
 
-let daysToMoon = (hoursToMoon / 24);
+//let daysToMoon = (hoursToMoon / 24);
 
 console.log(spaceShuttle);
 console.log(shuttleSpeed);
-//console.log(distanceToMars);
-console.log(distanceToMoon);
+console.log(distanceToMars);
+//console.log(distanceToMoon);
 console.log(milesPerKilometer);
 
 //console.log(milesToMars);
-console.log (spaceShuttle + " will" + " take "  + daysToMoon + " days" + " to" + " reach" + " the " + "Moon.");
+console.log (spaceShuttle + " will" + " take "  + daysToMars + " days" + " to" + " reach " + "Mars.");
 
 
 
