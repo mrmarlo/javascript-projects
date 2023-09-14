@@ -11,20 +11,20 @@ let computerStatus = 'green';
 
 if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
-   launchReady = true;
+   console.log(launchReady = true);
 } else {
    console.log('WARNING: Insufficient fuel!');
-   launchReady = false;
+   console.log(launchReady = false);
 }
 
 console.log("launchReady = ", launchReady);
 
 if (crewStatus && computerStatus === 'green'){
    console.log('Crew & computer cleared.');
-   launchReady = true;
+   console.log(launchReady = true);
 } else {
    console.log('WARNING: Crew or computer not ready!');
-   launchReady = false;
+   console.log(launchReady = false);
 }
 
 console.log("launchReady = ", launchReady);
@@ -35,3 +35,6 @@ console.log("launchReady = ", launchReady);
 // } else {
 //    console.log('Launch scrubbed.');
 // }
+
+//The value for launchReady should be true
+//Not sure where to place the new variables to resolve the reassignment issue!, "Yet"

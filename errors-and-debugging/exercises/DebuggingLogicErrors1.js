@@ -30,3 +30,6 @@ if (launchReady) {
 } else {
    console.log('Launch scrubbed.');
 }
+/*Should the shuttle have launched? No! Line 2 should have been logged to the console.*/
+
+//Did it?Yes

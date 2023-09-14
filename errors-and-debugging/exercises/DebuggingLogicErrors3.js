@@ -20,11 +20,13 @@ let computerStatus = 'green';
 
 if (crewStatus && computerStatus === 'green'){
    console.log('Crew & computer cleared.');
+   console.log("launchReady");
    launchReady = true;
 } else {
    console.log('WARNING: Crew or computer not ready!');
-   launchReady = false;
+   console.log(launchReady = false);
 }
+//Yes, it's working as expected!
 
 // if (launchReady) {
 //    console.log('10, 9, 8, 7, 6, 5, 4, 3, 2, 1...');
