@@ -19,3 +19,28 @@ let shuttleSpeed = 15000;
 // 4) PREDICT: Do the code blocks shown in the 'predict.txt' file produce the same result?
 
 console.log(/* "Yes" or "No" */);
+
+//Crew status
+if (crewStatus = true) {
+        console.log("Crew Ready");
+    } else {
+        console.log("Crew Not Ready")
+    }
+    //Computer status code
+if (computerStatusCode == 200) {
+    console.log("Please standby. Computer is rebooting");
+    } else if (computerStatusCode == 400) {
+       console.log("Success!");
+    }else {
+       console.log("ALERT: Computer offline!");
+    }
+    //Shuttlespeed
+    if (shuttleSpeed > 17500) {
+    console.log("ALERT: Escape velocity reached");
+    } else if (shuttleSpeed < 8000) {
+    console.log("ALERT: Cannot maintain orbit!");
+    } else {
+       console.log("Stable speed");
+    }
+
+    // 4) PREDICT: "NO"
