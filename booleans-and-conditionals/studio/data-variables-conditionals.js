@@ -13,3 +13,34 @@
 // add logic below to verify the weather status is clear
 
 // Verify shuttle launch can proceed based on above conditions
+
+let date = 'Monday 2019-03-18';
+let time = '10:05:34 AM';
+let astronautCount = 3;
+let astronautStatus = ('ready');
+let averageAstronautMassKg = 80.7;
+let crewMassKg = astronautCount * averageAstronautMassKg;
+let fuelMassKg = 760000;
+let shuttleMassKg = 74842.31;
+let totalMassKg = crewMassKg + fuelMassKg + shuttleMassKg;
+let maximumMassLimit = 850000;
+let fuelTempCelsius = -225;
+let minimumFuelTemp = -300;
+let maximumFuelTemp = -150;
+let fuelLevel = 100;
+let weatherStatus = 'clear';
+let preparedForLiftOff = true;
+
+if (astronautCount <= 7) {
+    console.log("Astronaut count is " + astronautCount + "." );
+}
+else if (astronautStatus = true && astronautCount <= 7) {
+    console.log("astronauts ready");
+}
+
+
+
+
+
+
+
