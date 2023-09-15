@@ -1,3 +1,5 @@
+
+
 // Initialize Variables below
 
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
@@ -16,8 +18,8 @@
 
 let date = 'Monday 2019-03-18';
 let time = '10:05:34 AM';
-let astronautCount = 3;
-let astronautStatus = ('ready');
+let astronautCount = 5;
+let astronautStatus = ('Ready');
 let averageAstronautMassKg = 80.7;
 let crewMassKg = astronautCount * averageAstronautMassKg;
 let fuelMassKg = 760000;
@@ -28,19 +30,41 @@ let fuelTempCelsius = -225;
 let minimumFuelTemp = -300;
 let maximumFuelTemp = -150;
 let fuelLevel = 100;
-let weatherStatus = 'clear';
+let weatherStatus = ('clear');
 let preparedForLiftOff = true;
 
-if (astronautCount <= 7) {
-    console.log("Astronaut count is " + astronautCount + "." );
+if (astronautCount <=7) {
+    console.log(`Astronaut count is: ${astronautCount}`);
 }
-else if (astronautStatus = true && astronautCount <= 7) {
-    console.log("astronauts ready");
+if (astronautStatus) {
+    console.log(`Astronauts: ${astronautStatus}`);
+}else {
+    console.log(`Astronauts NOT Ready!`);
 }
-
-
-
-
-
+if (totalMassKg > maximumMassLimit) {
+    console.log(`Launched scrubbed: Shuttle Mass is: ${totalMassKg}`);
+}else {
+    console.log(`Total Mass is within range: ${maximumMassLimit}`);
+}
+if (fuelTempCelsius >=-300 || fuelTempCelsius <=-150) {
+     console.log(`Fuel temperature in range: ${fuelTempCelsius}`);
+ }else {
+     console.log(`Launch scrubbed: Fuel temperature out of range: ${fuelTempCelsius}`);
+}
+ if (fuelLevel < 100) {
+     console.log(`Launch scrubbed: Check FUEL LEVEL ${fuelLevel}`);
+}else {
+    console.log(`Fuel Level PASS: ${fuelLevel}`);
+}
+if (weatherStatus == true) {
+    console.log(`The weather is OK: Proceed with Launch!`);
+}else {
+    console.log(`Launch scrubbed: Bad weather!`);
+}
+if (astronautCount && astronautStatus && totalMassKg == true){
+    console.log(`ALL systems are a go: "Have a safe flight team!"`);
+}else {
+    console.log(`Launched SCRUBBED: Maybe next time team!`)
+}
 
 
