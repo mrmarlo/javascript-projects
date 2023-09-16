@@ -26,11 +26,11 @@ let fuelMassKg = 760000;
 let shuttleMassKg = 74842.31;
 let totalMassKg = crewMassKg + fuelMassKg + shuttleMassKg;
 let maximumMassLimit = 850000;
-let fuelTempCelsius = -225;
+let fuelTempCelsius = -255;
 let minimumFuelTemp = -300;
 let maximumFuelTemp = -150;
 let fuelLevel = 100;
-let weatherStatus = ('clear');
+let weatherStatus = ('Clear');
 let preparedForLiftOff = true;
 
 if (astronautCount <=7) {
@@ -46,22 +46,22 @@ if (totalMassKg > maximumMassLimit) {
 }else {
     console.log(`Total Mass is within range: ${maximumMassLimit}`);
 }
-if (fuelTempCelsius >=-300 || fuelTempCelsius <=-150) {
+if (fuelTempCelsius >= -300 || fuelTempCelsius <= -150) {
      console.log(`Fuel temperature in range: ${fuelTempCelsius}`);
  }else {
      console.log(`Launch scrubbed: Fuel temperature out of range: ${fuelTempCelsius}`);
 }
- if (fuelLevel < 100) {
-     console.log(`Launch scrubbed: Check FUEL LEVEL ${fuelLevel}`);
-}else {
-    console.log(`Fuel Level PASS: ${fuelLevel}`);
+if (fuelLevel < 100) {
+    console.log(`Launch scrubbed: Check FUEL LEVEL ${fuelLevel}`);        
+}else {console.log(`Fuel Level PASS: ${fuelLevel}`); 
+ 
 }
-if (weatherStatus == true) {
+if (weatherStatus) {
     console.log(`The weather is OK: Proceed with Launch!`);
 }else {
     console.log(`Launch scrubbed: Bad weather!`);
-}
-if (astronautCount && astronautStatus && totalMassKg == true){
+}     
+if (astronautCount && astronautStatus && totalMassKg && fuelTempCelsius && fuelLevel && weatherStatus) {
     console.log(`ALL systems are a go: "Have a safe flight team!"`);
 }else {
     console.log(`Launched SCRUBBED: Maybe next time team!`)
