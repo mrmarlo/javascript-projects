@@ -8,3 +8,18 @@ let holdCabinet2 = ['orange drink', 'nerf toys', 'camera', 42, 'parsnip'];
 //2) Print a slice of two elements from each array. Does slice alter the original arrays?
 
 //3) reverse the first array, and sort the second. What is the difference between these two methods? Do the methods alter the original arrays?
+
+//holdCabinet1.slice(0, 4);
+//holdCabinet2.slice(0, 4);
+//No alterations were made to the arrays.
+
+
+holdCabinet1.reverse();
+holdCabinet2.sort();
+//the fist array was printed in reverse order and the second array was assending / alphabetical order.
+
+console.log(holdCabinet1);
+console.log(holdCabinet2);
+
+
+

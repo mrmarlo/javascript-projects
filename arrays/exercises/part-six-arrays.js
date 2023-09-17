@@ -9,3 +9,5 @@
 //4) Using bracket notation and the table array, print the mass of element1, the name for element 2 and the symbol for element26.
 
 //5) 'table' is an example of a 2-dimensional array. The first “level” contains the element arrays, and the second level holds the name/symbol/mass values. Experiment! Create a 3-dimensional array and print out one entry from each level in the array.
+
+//Will come back to this one if there is time!
