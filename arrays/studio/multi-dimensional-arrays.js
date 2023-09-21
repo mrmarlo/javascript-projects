@@ -2,10 +2,26 @@ let food = "water bottles,meal packs,snacks,chocolate";
 let equipment = "space suits,jet packs,tool belts,thermal detonators";
 let pets = "parrots,cats,moose,alien eggs";
 let sleepAids = "blankets,pillows,eyepatches,alarm clocks";
-
+let arr = [];
 //1) Use split to convert the strings into four cabinet arrays. Alphabetize the contents of each cabinet.
+food = food.split(", ");
+equipment = equipment.split(", ");
+pets = pets.split(", ");
+sleepAids = sleepAids.split(", ");
+
+
+console.log(food.sort());
+console.log(equipment.sort());
+console.log(pets.sort());
+console.log(sleepAids.sort());
+
+
 
 //2) Initialize a cargoHold array and add the cabinet arrays to it. Print cargoHold to verify its structure.
+let cargoHoldArr = [];
+
+console.log(cargoHoldArr);
+
 
 //3) Query the user to select a cabinet (0 - 3) in the cargoHold.
 
